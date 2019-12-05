@@ -7,6 +7,7 @@ add_clang_library(clangTidyObjCModule
   ObjCTidyModule.cpp
   PropertyDeclarationCheck.cpp
   SuperSelfCheck.cpp
+  UnderscoreLeadingCheck.cpp
 
   LINK_LIBS
   clangAST

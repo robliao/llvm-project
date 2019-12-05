@@ -14,6 +14,7 @@
 #include "MissingHashCheck.h"
 #include "PropertyDeclarationCheck.h"
 #include "SuperSelfCheck.h"
+#include "UnderscoreLeadingCheck.h"
 
 using namespace clang::ast_matchers;
 
@@ -34,6 +35,8 @@ public:
         "objc-property-declaration");
     CheckFactories.registerCheck<SuperSelfCheck>(
         "objc-super-self");
+    CheckFactories.registerCheck<UnderscoreLeadingCheck>(
+        "google-objc-leading-underscores");
   }
 };
 
